@@ -1,9 +1,8 @@
-
-$color-primary: #5c368f;
-$color-secondary: #8756c7;
-$color-accent: #ecf0f5e0;
-$color-detail: hsla(197, 59%, 55%, 0.797);
-$color-detail-two: hsla(197, 67%, 74%, 0.797);
+$color-one: #2b1569;
+$color-two: #6163e4;
+$color-three: #94C9A9;
+$color-four: #70afa5;
+$color-five: #C6ECAE;
 
 $font-stack-primary: 'Roboto', sans-serif;
 
@@ -19,7 +18,7 @@ h1 {
     padding-top: 1rem;
     font-size: 1rem;
     text-align: center;
-    color: $color-primary;
+    color: $color-four;
     text-transform: uppercase;
     font-family: $font-stack-primary;
 
@@ -29,7 +28,7 @@ h1 {
 h2 {
     font-size: .3rem;
     text-align: center;
-    color: $color-secondary;
+    color:$color-five;
     text-transform: uppercase;
     font-family: $font-stack-primary;
 }
@@ -39,19 +38,19 @@ h2 {
 /*HEADER AND NAV --------------------------*/
 
 header {
-    background-color: $color-detail;
+    background-color: $color-two;
     padding-bottom: 2em;
 }
 
 nav {
      
-    background-color: $color-primary;
+    background-color: $color-one;
 .nav-link {
-    color: $color-accent;
+    color:$color-four;
 }  
 
 .nav-link:hover {
-    color: $color-detail;
+    color: white;
 }
 
 }
@@ -68,12 +67,33 @@ nav {
 /*MAIN --------------------------*/
 
 main {
-    background-color: $color-detail-two;
+    background-color: #e6eee1;
+}
+
+.about-title, .skills-title, .portfolio-title {
+    color:$color-two;
+    padding-top: 1rem;
 }
 
 .about-text {
-    background-color: $color-accent;
+    background-color: $color-five;
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    border: 1px solid $color-four;
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+.svg-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
 }
