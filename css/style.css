@@ -1,0 +1,38 @@
+/*BASE --------------------------*/
+html {
+  font-size: 15px;
+}
+
+h1 {
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #5c368f;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 0.3rem;
+  text-align: center;
+  color: #8756c7;
+  text-transform: uppercase;
+}
+
+/*NAV --------------------------*/
+nav {
+  background-color: #5c368f;
+}
+nav .nav-link {
+  color: #ecf0f5e0;
+}
+nav .nav-link:hover {
+  color: #689aaee0;
+}
+
+/*HEADER--------------------------*/
+.profile-img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
