@@ -9,6 +9,7 @@ h1 {
   text-align: center;
   color: #5c368f;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
@@ -16,9 +17,15 @@ h2 {
   text-align: center;
   color: #8756c7;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 
-/*NAV --------------------------*/
+/*HEADER AND NAV --------------------------*/
+header {
+  background-color: rgba(73, 170, 208, 0.797);
+  padding-bottom: 2em;
+}
+
 nav {
   background-color: #5c368f;
 }
@@ -26,12 +33,27 @@ nav .nav-link {
   color: #ecf0f5e0;
 }
 nav .nav-link:hover {
-  color: #689aaee0;
+  color: rgba(73, 170, 208, 0.797);
 }
 
-/*HEADER--------------------------*/
 .profile-img {
+  margin-top: 1rem;
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
+
+/*MAIN --------------------------*/
+main {
+  background-color: rgba(144, 208, 233, 0.797);
+}
+
+.about-text {
+  background-color: #ecf0f5e0;
+  width: 80%;
+  text-align: center;
   margin: 0 auto;
 }
 
