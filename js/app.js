@@ -1,11 +1,4 @@
-// const button = document.querySelector('.see-more');
-
-
-
-// button.addEventListener('click', e => {
-//  console.log("button clicked");
-//  button.classList.toggle("flipCard");
-// });
+// source: https://codepen.io/mondal10/pen/WNNEvjV
 
 var cards = document.querySelectorAll('.card');
 
