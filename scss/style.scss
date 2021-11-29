@@ -45,7 +45,8 @@ header {
 nav {
      
     background-color: $color-one;
-.nav-link {
+
+    .nav-link {
     color:$color-four;
 }  
 
@@ -64,7 +65,7 @@ nav {
     width: 33%;
 }
 
-/*MAIN --------------------------*/
+/*ABOUT and SVG's --------------------------*/
 
 main {
     background-color: #e6eee1;
@@ -97,3 +98,97 @@ svg {
     width: 100px;
     padding: 5px;
 }
+
+
+/*MY PORTFOLIO --------------------------*/
+
+// .main-container {
+//     position: absolute;
+//     transform: translate(-50%, -50%);
+//     width: 300px;
+//     height: 300px;
+//     top: 50%;
+//     left: 50%;
+    
+// }
+
+// .card{
+//     position: relative;
+//     transform-style: preserve-3d;
+//     transition: all 0.8s ease;
+//     width: 100%;
+//     height: 100%;
+// }
+
+
+// .front {
+//     position: absolute;
+//     backface-visibility: hidden;
+//     text-align: center;
+//     width: 100%;
+//     height: 100%;
+
+// }
+
+
+// .back {
+//     position: absolute;
+//     backface-visibility: hidden;
+//     transform: rotateY(180deg);
+//     text-align: center;
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .flipCard {
+//     transform: rotateY(180deg);
+// }
+
+// .hidden {
+//     visibility: hidden;
+// }
+
+.scene {
+  display: inline-block;
+  width: 200px;
+  height: 260px;
+/*   border: 1px solid #CCC; */
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: crimson;
+}
+
+.card__face--back {
+  background: slateblue;
+  transform: rotateY(180deg);
+}
+
