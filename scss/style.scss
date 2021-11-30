@@ -25,8 +25,6 @@ h1 {
     display: inline-flex;
     background-color: white;
 
-  
-
 
 }
 
@@ -101,7 +99,7 @@ main {
 
 .about-text {
     background-color: $color-five;
-    color: $color-one;
+    color: black;
     width: 80%;
     text-align: center;
     margin: 0 auto;
@@ -121,10 +119,26 @@ svg {
     height: 100px;
     width: 100px;
     padding: 5px;
+    color: $color-two;
 }
+
+path {
+  fill: $color-one;
+}​
 
 
 /*MY PORTFOLIO --------------------------*/
+
+
+.view-more {
+
+ 
+  
+}
+
+.portfolio-title {
+  margin: 0 auto;
+}
 // source: https://codepen.io/mondal10/pen/WNNEvjV
 
 .card-container {
@@ -135,6 +149,20 @@ svg {
 
 }
 
+.card__face .view-more {
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 .flipCard {
     transform: rotateY(180deg);
@@ -167,6 +195,7 @@ svg {
   transition: transform 1s;
 }
 
+
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
@@ -181,6 +210,7 @@ svg {
   font-weight: bold;
   font-size: 1em;
   backface-visibility: hidden;
+  
 }
 
 #front-one {
@@ -216,20 +246,17 @@ svg {
   background-size: cover;
 }
 
+// .card__face--front {
+//   display: flex;
+//   flex-direction:row;
+// }
 
 .card__face--back {
   background: slateblue;
   transform: rotateY(180deg);
 }
 
-.view-more {
-  height: 3em;
-  width: 3em;
-}
 
-.portfolio-title {
-  margin: 0 auto;
-}
 
 
 // Particle SCSS source: https://codepen.io/tutsplus/pen/MrjYJK
@@ -259,8 +286,9 @@ z-index: -1;
   height: $size;
   width: $size;
   animation-delay: -$i * .1s;
-  transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-  background: hsl(random(360), 70%, 50%);
+  transform: translate3d((random(100) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+  // background: hsl(random(360), 70%, 50%);
+  background: white;
 }
 }
 
@@ -270,12 +298,18 @@ z-index: -1;
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding-top: 20px;
+  text-align: center;
+  background: $color-one;
+
 }
 
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 footer ul {
@@ -291,16 +325,14 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
+  // margin-left: 5px;
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(../images/svg/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(../images/svg/linkedin.svg);
 }
