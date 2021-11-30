@@ -22,8 +22,9 @@ h2 {
 
 /*HEADER AND NAV --------------------------*/
 header {
-  background-color: #6163e4;
+  background: url("../images/texture-gf9a898ef1_1920.jpg");
   padding-bottom: 2em;
+  background-size: cover;
 }
 
 nav {
@@ -39,6 +40,7 @@ nav .nav-link:hover {
 .profile-img {
   margin-top: 1rem;
   border-radius: 50%;
+  border: 5px solid white;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -79,20 +81,30 @@ svg {
 }
 
 /*MY PORTFOLIO --------------------------*/
-/* .grid-container {
+.card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-} */
+  flex-wrap: wrap;
+  flex-basis: 1fr;
+  flex-direction: column;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
+.hidden {
+  visibility: hidden;
+}
 
 .scene {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 1fr;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   width: 250px;
   height: 250px;
-  /*   border: 1px solid #CCC; */
-  margin: 40px 0;
-  perspective: 600px;
 }
 
 .card {
@@ -120,8 +132,34 @@ svg {
   backface-visibility: hidden;
 }
 
-.card__face--front {
-  background: crimson;
+#front-one {
+  background-image: url("../images/online-registration-form.png");
+  background-size: cover;
+}
+
+#front-two {
+  background-image: url("../images/an-interactive-photo-gallery.png");
+  background-size: cover;
+}
+
+#front-three {
+  background-image: url("../images/web-app-dashboard.png");
+  background-size: cover;
+}
+
+#front-four {
+  background-image: url("../images/api-employee-directory.png");
+  background-size: cover;
+}
+
+#front-five {
+  background-image: url("../images/web-style-guide.png");
+  background-size: cover;
+}
+
+#front-six {
+  background-image: url("../images/profile-project.png");
+  background-size: cover;
 }
 
 .card__face--back {

@@ -38,8 +38,10 @@ h2 {
 /*HEADER AND NAV --------------------------*/
 
 header {
-    background-color: $color-two;
+    // background-color: $color-two;
+    background: url("../images/texture-gf9a898ef1_1920.jpg");
     padding-bottom: 2em;
+    background-size: cover;
 }
 
 nav {
@@ -59,10 +61,12 @@ nav {
 .profile-img {
     margin-top: 1rem;
     border-radius: 50%;
+    border: 5px solid white;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 33%;
+    
 }
 
 /*ABOUT and SVG's --------------------------*/
@@ -102,6 +106,16 @@ svg {
 
 /*MY PORTFOLIO --------------------------*/
 // source: https://codepen.io/mondal10/pen/WNNEvjV
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 1fr;
+  flex-direction: column;
+
+}
+
+
 .flipCard {
     transform: rotateY(180deg);
 }
@@ -112,14 +126,14 @@ svg {
 
 .scene {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 1fr;
+  flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   width: 250px;
   height: 250px;
-  /*   border: 1px solid #CCC; */
-  margin: 40px 0;
-  perspective: 600px;
+ 
 }
 
 
@@ -149,9 +163,39 @@ svg {
   backface-visibility: hidden;
 }
 
-.card__face--front {
-  background: crimson;
+#front-one {
+   background-image: url("../images/online-registration-form.png");
+   background-size: cover;
 }
+
+#front-two {
+  background-image: url("../images/an-interactive-photo-gallery.png");
+  background-size: cover;
+}
+
+
+#front-three {
+  background-image: url("../images/web-app-dashboard.png");
+  background-size: cover;
+}
+
+
+#front-four {
+  background-image: url("../images/api-employee-directory.png");
+  background-size: cover;
+}
+
+#front-five {
+  background-image: url("../images/web-style-guide.png");
+  background-size: cover;
+}
+
+
+#front-six {
+  background-image: url("../images/profile-project.png");
+  background-size: cover;
+}
+
 
 .card__face--back {
   background: slateblue;
