@@ -1,8 +1,9 @@
 $color-one: #2b1569;
 $color-two: #6163e4;
-$color-three: #94C9A9;
+$color-three: #94c9b0;
 $color-four: #70afa5;
-$color-five: #C6ECAE;
+$color-five: #9b8ea7a8;
+$color-six: #e6eee1;
 
 $font-stack-primary: 'Roboto', sans-serif;
 
@@ -10,7 +11,7 @@ $font-stack-primary: 'Roboto', sans-serif;
 /*BASE --------------------------*/
 
 html {
-    font-size: 15px;
+    font-size: 15px;  
     
 }
 
@@ -18,9 +19,13 @@ h1 {
     padding-top: 1rem;
     font-size: 1rem;
     text-align: center;
-    color: $color-four;
+    color: $color-one;
     text-transform: uppercase;
     font-family: $font-stack-primary;
+    display: inline-flex;
+    background-color: white;
+
+  
 
 
 }
@@ -28,9 +33,11 @@ h1 {
 h2 {
     font-size: .3rem;
     text-align: center;
-    color:$color-five;
+    color:$color-two;
     text-transform: uppercase;
     font-family: $font-stack-primary;
+    display: inline-flex;
+    background-color: white;
 }
 
 
@@ -39,9 +46,16 @@ h2 {
 
 header {
     // background-color: $color-two;
-    background: url("../images/texture-gf9a898ef1_1920.jpg");
+    background: url("../images/hong-kong-g4e52ea28d_1920.jpg");
     padding-bottom: 2em;
     background-size: cover;
+    z-index: 1;
+    position: relative;
+}
+
+.name-div {
+text-align: center;
+
 }
 
 nav {
@@ -49,7 +63,7 @@ nav {
     background-color: $color-one;
 
     .nav-link {
-    color:$color-four;
+    color:$color-six;
 }  
 
 .nav-link:hover {
@@ -60,11 +74,12 @@ nav {
 
 .profile-img {
     margin-top: 1rem;
-    border-radius: 50%;
-    border: 5px solid white;
-    display: block;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid $color-six;
+    display: block;
     width: 33%;
     
 }
@@ -72,7 +87,11 @@ nav {
 /*ABOUT and SVG's --------------------------*/
 
 main {
-    background-color: #e6eee1;
+    // background-color: $color-six;
+    background-color: white ;
+    z-index: 1;
+    position: relative;
+    text-align: center;
 }
 
 .about-title, .skills-title, .portfolio-title {
@@ -82,11 +101,12 @@ main {
 
 .about-text {
     background-color: $color-five;
+    color: $color-one;
     width: 80%;
     text-align: center;
     margin: 0 auto;
     border: 1px solid $color-four;
-    border-radius: 5%;
+    // border-radius: 5%;
     padding: 1rem;
 }
 
@@ -203,7 +223,90 @@ svg {
 }
 
 .view-more {
-  height: .5em;
-  width: 1em;
+  height: 3em;
+  width: 3em;
 }
 
+.portfolio-title {
+  margin: 0 auto;
+}
+
+
+// Particle SCSS source: https://codepen.io/tutsplus/pen/MrjYJK
+
+// body {
+//   background: #ecf3f3;
+// }
+
+.particle {
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+}
+
+
+@for $i from 1 through 30 {
+@keyframes particle-animation-#{$i} {
+  100% {
+    transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+  }
+}
+
+.particle:nth-child(#{$i}){
+  animation: particle-animation-#{$i} 60s infinite;
+  $size: random(5) + 5 + px;
+  opacity: random(100)/100;
+  height: $size;
+  width: $size;
+  animation-delay: -$i * .1s;
+  transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+  background: hsl(random(360), 70%, 50%);
+}
+}
+
+
+// footer
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(../images/svg/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../images/svg/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/svg/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
