@@ -41,7 +41,7 @@ h2 {
 #contact-title, #about-title, #skills-title, #portfolio-title{
 
 color: black;
-padding-top: 30px;
+padding-top: 15px;
 padding-bottom: 20px;
 
 
@@ -169,7 +169,7 @@ path {
 .buttons-back{
 
   position: absolute;
-  bottom:10%;
+  bottom:5%;
   left: 10%;
   right: 10%;
   
@@ -188,11 +188,17 @@ path {
   border-radius: 5px;
   text-align: center;
   margin-left: 5px;
+  // z-index: 1;
+  // position: relative;
+  
+ 
+
 }
 
 .about-heading {
   text-align: center;
   color: black;
+  padding-top: 15px;
 }
 
 .about-list {
@@ -226,10 +232,6 @@ path {
 }
 
 
-.card.is-flipped {
-  transform: translateX(-100%) rotateY(-180deg);
-}
-
 .card__face {
   position: absolute;
   width: 100%;
@@ -241,16 +243,21 @@ path {
   font-size: 1em;
   backface-visibility: hidden;
   
+  
 }
 
 .card__face--back {
-  content: " ";
   background: $color-five;
   transform: rotateY(180deg);
 
 
 }
 
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+ 
+
+}
 
  #front-one {
    position: relative;
@@ -427,4 +434,8 @@ a.github {
 }
 a.social:hover {
   opacity: 1;
+}
+
+.email {
+ color: black;
 }
