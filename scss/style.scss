@@ -16,7 +16,7 @@ html {
 }
 
 h1 {
-    padding-top: 1rem;
+    // padding-top: 1rem;
     font-size: 1rem;
     text-align: center;
     color: $color-one;
@@ -38,7 +38,14 @@ h2 {
     background-color: white;
 }
 
+#contact-title, #about-title, #skills-title, #portfolio-title{
 
+color: black;
+padding-top: 30px;
+padding-bottom: 20px;
+
+
+}
 
 /*HEADER AND NAV --------------------------*/
 
@@ -92,10 +99,10 @@ main {
     text-align: center;
 }
 
-.about-title, .skills-title, .portfolio-title {
-    color:$color-two;
-    padding-top: 1rem;
-}
+// #about-title, #skills-title, #portfolio-title, #contact-title {
+//     color:$color-two;
+//     padding-top: 1rem;
+// }
 
 .about-text {
     background-color: $color-five;
@@ -129,17 +136,10 @@ path {
 
 /*MY PORTFOLIO --------------------------*/
 
-
-.view-more {
-
- 
-  
-}
-
-.portfolio-title {
+#portfolio-title {
   margin: 0 auto;
 }
-// source: https://codepen.io/mondal10/pen/WNNEvjV
+
 
 .card-container {
   display: flex;
@@ -149,28 +149,57 @@ path {
 
 }
 
-.card__face .view-more {
+ .view-more {
  
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #555;
+  background-color: rgb(85, 85, 85);
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+
 }
 
-.flipCard {
-    transform: rotateY(180deg);
+
+.buttons-back{
+
+  position: absolute;
+  bottom:10%;
+  left: 10%;
+  right: 10%;
+  
+  
 }
 
-.hidden {
-    visibility: hidden;
+ .view-code, .view-project {
+
+ 
+  background-color: rgb(85, 85, 85);
+  color: white;
+  font-size: 8px;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 5px;
 }
+
+.about-heading {
+  text-align: center;
+  color: black;
+}
+
+.about-list {
+  text-align: left;
+  font-size: 12px;
+}
+//Portfolio cards source: https://codepen.io/mondal10/pen/WNNEvjV
 
 .scene {
   display: flex;
@@ -181,6 +210,7 @@ path {
   margin: 0 auto;
   width: 250px;
   height: 250px;
+  padding-bottom: 2rem;
  
 }
 
@@ -213,57 +243,107 @@ path {
   
 }
 
-#front-one {
+.card__face--back {
+  content: " ";
+  background: $color-five;
+  transform: rotateY(180deg);
+
+
+}
+
+
+ #front-one {
+   position: relative;
+
+ }
+
+#front-one::before {
+   content: " ";
    background-image: url("../images/online-registration-form.png");
    background-size: cover;
+   opacity: .5;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+
 }
 
-#front-two {
+#front-two::before {
+  content: " ";
   background-image: url("../images/an-interactive-photo-gallery.png");
   background-size: cover;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
 }
 
 
-#front-three {
+#front-three::before {
+  content: " ";
   background-image: url("../images/web-app-dashboard.png");
   background-size: cover;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
 }
 
 
-#front-four {
+#front-four::before {
+  content: " ";
   background-image: url("../images/api-employee-directory.png");
   background-size: cover;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
 }
 
-#front-five {
+#front-five::before {
+  content: " ";
   background-image: url("../images/web-style-guide.png");
   background-size: cover;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
 }
 
 
-#front-six {
+#front-six::before {
+  content: " ";
   background-image: url("../images/profile-project.png");
   background-size: cover;
-}
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 
-// .card__face--front {
-//   display: flex;
-//   flex-direction:row;
-// }
-
-.card__face--back {
-  background: slateblue;
-  transform: rotateY(180deg);
 }
 
 
 
+
+/*PARTICLE --------------------------*/
 
 // Particle SCSS source: https://codepen.io/tutsplus/pen/MrjYJK
-
-// body {
-//   background: #ecf3f3;
-// }
 
 .particle {
 position: absolute;
@@ -293,7 +373,13 @@ z-index: -1;
 }
 
 
-// footer
+/*CONTACT --------------------------*/
+
+.contact-section {
+  margin: 3rem;
+}
+/*FOOTER --------------------------*/
+
 
 footer {
   width: 100%;
