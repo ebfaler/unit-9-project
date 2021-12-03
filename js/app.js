@@ -11,17 +11,33 @@ source: https://codepen.io/mondal10/pen/WNNEvjV
 
 var cards = document.querySelectorAll('.card');
 var viewMore = document.querySelectorAll('.view-more');
+var cardFace = document.querySelectorAll('.card__face');
 
 
 cards.forEach((card) =>
-
+{
   card.addEventListener('click', e => {
     if (e.target.classList == "view-more") {
       console.log("card flipped");
-      card.classList.toggle('is-flipped');
+      card.classList.add('is-flipped');
     }
+  });
+
+  card.addEventListener('click', e => {
+   if(e.target.classList.contains("card__face"))    {
+      console.log("card clicked");
+      card.classList.remove('is-flipped');
+    } 
   })
+
+}
 );
+
+
+
+
+
+
 
 // cards.forEach((card) => {
 //   const viewMore = card.querySelector('.view-more');

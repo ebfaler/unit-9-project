@@ -259,89 +259,48 @@ path {
 
 }
 
- #front-one {
-   position: relative;
-
- }
-
-#front-one::before {
-   content: " ";
+#front-one {
+  
    background-image: url("../images/online-registration-form.png");
    background-size: cover;
-   opacity: .5;
-   position: absolute;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-
+   
 }
 
-#front-two::before {
-  content: " ";
+#front-two {
   background-image: url("../images/an-interactive-photo-gallery.png");
   background-size: cover;
-  opacity: .5;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-
 }
 
 
-#front-three::before {
-  content: " ";
+#front-three {
+
   background-image: url("../images/web-app-dashboard.png");
   background-size: cover;
-  opacity: .5;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
 
 }
 
 
-#front-four::before {
-  content: " ";
+#front-four {
+
   background-image: url("../images/api-employee-directory.png");
   background-size: cover;
-  opacity: .5;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  
 
 }
 
-#front-five::before {
-  content: " ";
+#front-five {
+
   background-image: url("../images/web-style-guide.png");
   background-size: cover;
-  opacity: .5;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+ 
 
 }
 
 
-#front-six::before {
-  content: " ";
+#front-six {
+
   background-image: url("../images/profile-project.png");
   background-size: cover;
-  opacity: .5;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
 
 }
 
