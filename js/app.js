@@ -14,37 +14,29 @@ var viewMore = document.querySelectorAll('.view-more');
 var cardFace = document.querySelectorAll('.card__face');
 
 
-Wille:
-	cards.forEach((card) =>
-{
+
+cards.forEach((card) => {
   card.addEventListener('click', e => {
     if (e.target.classList == "view-more") {
       console.log("card flipped");
-      if(card.classList.contains('is-flipped')){
+      if (card.classList.contains('is-flipped')) {
         card.classList.remove('is-flipped');
-      }else{
+      } else {
         card.classList.add('is-flipped');
       }
-      
+
     }
   });
 
   card.addEventListener('click', e => {
-   if(e.target.classList.contains("card__face"))    {
+    if (e.target.classList.contains("card__face")) {
       console.log("card clicked");
       card.classList.remove('is-flipped');
-    } 
+    }
   })
 
 }
 );
-
-
-
-
-
-
-
 
 
 // cards.forEach((card) => {

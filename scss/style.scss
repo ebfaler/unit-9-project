@@ -4,16 +4,18 @@ $color-three: #94c9b0;
 $color-four: #70afa5;
 $color-five: #9b8ea7a8;
 $color-six: #e6eee1;
+$color-seven: #cfc4daa8;
 
 $font-stack-primary: 'Roboto', sans-serif;
 
 
 /*BASE --------------------------*/
 
-html {
-    font-size: 15px;  
-    
+* {
+    font-size: 15px; 
+    font-family: $font-stack-primary;
 }
+
 
 h1 {
     // padding-top: 1rem;
@@ -21,11 +23,9 @@ h1 {
     text-align: center;
     color: $color-one;
     text-transform: uppercase;
-    font-family: $font-stack-primary;
+    // font-family: $font-stack-primary;
     display: inline-flex;
-    background-color: white;
-
-
+    // background-color: white;
 }
 
 h2 {
@@ -33,19 +33,19 @@ h2 {
     text-align: center;
     color:$color-two;
     text-transform: uppercase;
-    font-family: $font-stack-primary;
     display: inline-flex;
-    background-color: white;
+ // background-color: white;
 }
+
+
 
 #contact-title, #about-title, #skills-title, #portfolio-title{
 
 color: black;
 padding-top: 15px;
 padding-bottom: 20px;
-
-
 }
+
 
 /*HEADER AND NAV --------------------------*/
 
@@ -59,9 +59,18 @@ header {
 }
 
 .name-div {
-text-align: center;
-
+  text-align: center;
+  display: block;
 }
+
+
+.block-div {
+  background-color: white;
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+}
+
 
 nav {
      
@@ -74,7 +83,6 @@ nav {
 .nav-link:hover {
     color: white;
 }
-
 }
 
 .profile-img {
@@ -86,7 +94,6 @@ nav {
     border: 5px solid $color-six;
     display: block;
     width: 33%;
-    
 }
 
 /*ABOUT and SVG's --------------------------*/
@@ -105,27 +112,31 @@ main {
 // }
 
 .about-text {
-    background-color: $color-five;
+    background-color: $color-seven;
     color: black;
     width: 80%;
     text-align: center;
     margin: 0 auto;
-    border: 1px solid $color-four;
-    // border-radius: 5%;
     padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .svg-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  
 }
 
 svg {
     height: 100px;
     width: 100px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
     color: $color-two;
 }
 
@@ -142,12 +153,17 @@ path {
 
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 1vw;
-  flex-direction: column;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "one"
+  "two"
+  "three"
+  "four"
+  "five"
+  "six";
 }
+
 
  .view-more {
  
@@ -163,19 +179,25 @@ path {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
 
+.view-more:hover {
+  padding: 15px 26px;
 }
 
 
 .buttons-back{
 
   position: absolute;
-  bottom:5%;
+  bottom:10%;
   left: 10%;
   right: 10%;
-  
-  
+  a:link, a:visited {
+    text-decoration: none;
+    color: white;
+  } 
 }
+
 
  .view-code, .view-project {
 
@@ -189,12 +211,12 @@ path {
   border-radius: 5px;
   text-align: center;
   margin-left: 5px;
-  // z-index: 1;
-  // position: relative;
-  
- 
-
 }
+
+.view-code:hover, .view-project:hover {
+  padding: 12px 16px;
+}
+
 
 .about-heading {
   text-align: center;
@@ -206,22 +228,26 @@ path {
   text-align: left;
   font-size: 12px;
 }
-//Portfolio cards source: https://codepen.io/mondal10/pen/WNNEvjV
+
+.about-list li {
+  padding-bottom: 10px;
+}
+
+/////Portfolio cards source: https://codepen.io/mondal10/pen/WNNEvjV
 
 .scene {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 1fr;
-  flex-direction: column;
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-basis: 1fr;
+  // flex-direction: column;
   align-items: center;
   margin: 0 auto;
   width: 250px;
   height: 250px;
   padding-bottom: 2rem;
- 
+  perspective: 1000px; 
 }
 
-// need to make transform work in all broswers
 .card {
   position: relative;
   width: 100%;
@@ -233,7 +259,6 @@ path {
   -webkit-transform-origin: center right;
   transition: transform 1s;
   -webkit-transition: transform 1s;
-
 }
 
 
@@ -241,36 +266,53 @@ path {
   position: absolute;
   width: 100%;
   height: 100%;
-  // line-height: 260px;
   color: white;
   text-align: center;
   font-weight: bold;
   font-size: 1em;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  
-  
+  -webkit-backface-visibility: hidden;  
 }
 
 .card__face--back {
   background: $color-five;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-
 }
 
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
   -webkit-transform: translateX(-100%) rotateY(-180deg);
- 
-
 }
+
+/////
+
+.card1 {
+  grid-area: one;
+}
+
+.card2 {
+  grid-area: two;
+}
+.card3 {
+  grid-area: three;
+}
+.card4 {
+  grid-area: four;
+}
+.card5 {
+  grid-area: five;
+}
+.card6 {
+  grid-area: six;
+}
+
+
 
 #front-one {
   
    background-image: url("../images/online-registration-form.png");
-   background-size: cover;
-   
+   background-size: cover;   
 }
 
 #front-two {
@@ -283,7 +325,6 @@ path {
 
   background-image: url("../images/web-app-dashboard.png");
   background-size: cover;
-
 }
 
 
@@ -291,16 +332,12 @@ path {
 
   background-image: url("../images/api-employee-directory.png");
   background-size: cover;
-  
-
 }
 
 #front-five {
 
-  background-image: url("../images/web-style-guide.png");
+  background-image: url("../images/game-show-app.png");
   background-size: cover;
- 
-
 }
 
 
@@ -308,11 +345,7 @@ path {
 
   background-image: url("../images/profile-project.png");
   background-size: cover;
-
 }
-
-
-
 
 /*PARTICLE --------------------------*/
 
@@ -396,13 +429,69 @@ a.social {
 a.linkedin {
   background-image: url(../images/svg/linkedin.svg);
 }
+
 a.github {
   background-image: url(../images/svg/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
 
 .email {
  color: black;
+ text-decoration: none;
+}
+
+
+/*MEDIA QUERIES TABLET --------------------------*/
+
+@media (min-width: 768px) {
+
+
+  .profile-img {
+    width: 25%;
+    margin-top: 30px;   
+}
+
+.block-div {
+  background-color: white;
+  display: block;
+  width: 50%;
+  margin: 15px auto;
+}
+
+
+svg {
+  height: 80px;
+  width: 80px;
+  color: $color-two;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "one two"
+  "three four"
+  "five six";
+}
+
+
+
+}
+
+
+
+
+/*MEDIA QUERIES DESKTOP --------------------------*/
+
+@media (min-width: 1024px) {
+
+  
+
+
+
+
 }
