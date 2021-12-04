@@ -14,12 +14,18 @@ var viewMore = document.querySelectorAll('.view-more');
 var cardFace = document.querySelectorAll('.card__face');
 
 
-cards.forEach((card) =>
+Wille:
+	cards.forEach((card) =>
 {
   card.addEventListener('click', e => {
     if (e.target.classList == "view-more") {
       console.log("card flipped");
-      card.classList.add('is-flipped');
+      if(card.classList.contains('is-flipped')){
+        card.classList.remove('is-flipped');
+      }else{
+        card.classList.add('is-flipped');
+      }
+      
     }
   });
 
@@ -32,6 +38,8 @@ cards.forEach((card) =>
 
 }
 );
+
+
 
 
 
