@@ -58,17 +58,12 @@ header {
     position: relative;
 }
 
+
 .name-div {
-  text-align: center;
-  display: block;
-}
-
-
-.block-div {
   background-color: white;
-  display: block;
-  width: 80%;
+  display: table;
   margin: 15px auto;
+  padding: 3px;
 }
 
 
@@ -189,7 +184,7 @@ path {
 .buttons-back{
 
   position: absolute;
-  bottom:10%;
+  bottom:8%;
   left: 10%;
   right: 10%;
   a:link, a:visited {
@@ -226,11 +221,11 @@ path {
 
 .about-list {
   text-align: left;
-  font-size: 12px;
 }
 
 .about-list li {
-  padding-bottom: 10px;
+  font-size: 12px;
+  padding-bottom: 1px;
 }
 
 /////Portfolio cards source: https://codepen.io/mondal10/pen/WNNEvjV
@@ -285,6 +280,8 @@ path {
   background: $color-five;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+  background-size: cover;
+  
 }
 
 .card.is-flipped {
@@ -475,8 +472,13 @@ svg {
   color: $color-two;
 }
 
+.scene {
+  width: 300px;
+  height: 300px;
+
+}
+
 .card-container {
-  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
@@ -485,9 +487,9 @@ svg {
   "five six";
 }
 
-
-
-}
+.about-list li {
+font-size: 15px;
+}}
 
 
 
