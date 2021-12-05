@@ -18,14 +18,13 @@ $font-stack-primary: 'Roboto', sans-serif;
 
 
 h1 {
-    // padding-top: 1rem;
+  
     font-size: 1rem;
     text-align: center;
     color: $color-one;
     text-transform: uppercase;
-    // font-family: $font-stack-primary;
     display: inline-flex;
-    // background-color: white;
+
 }
 
 h2 {
@@ -34,10 +33,8 @@ h2 {
     color:$color-two;
     text-transform: uppercase;
     display: inline-flex;
- // background-color: white;
+
 }
-
-
 
 #contact-title, #about-title, #skills-title, #portfolio-title{
 
@@ -50,7 +47,7 @@ padding-bottom: 20px;
 /*HEADER AND NAV --------------------------*/
 
 header {
-    // background-color: $color-two;
+ 
     background: url("../images/hong-kong-g4e52ea28d_1920.jpg");
     padding-bottom: 2em;
     background-size: cover;
@@ -70,10 +67,11 @@ header {
 nav {
      
     background-color: $color-one;
-    padding: 10px;
+    font-size: 20px;
 
     .nav-link {
     color:$color-six;
+    
 }  
 
 .nav-link:hover {
@@ -89,23 +87,18 @@ nav {
     border-radius: 50%;
     border: 5px solid $color-six;
     display: block;
-    width: 33%;
+    width: 30%;
 }
 
 /*ABOUT and SVG's --------------------------*/
 
 main {
-    // background-color: $color-six;
+  
     background-color: white ;
     z-index: 1;
     position: relative;
     text-align: center;
 }
-
-// #about-title, #skills-title, #portfolio-title, #contact-title {
-//     color:$color-two;
-//     padding-top: 1rem;
-// }
 
 .about-text {
     background-color: $color-seven;
@@ -380,7 +373,6 @@ z-index: -1;
 }
 /*FOOTER --------------------------*/
 
-
 footer {
   width: 100%;
   min-height: 35px;
@@ -411,7 +403,6 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  // margin-left: 5px;
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
@@ -444,6 +435,8 @@ a.social:hover {
 }
 
 
+
+
 /*MEDIA QUERIES TABLET --------------------------*/
 
 @media (min-width: 768px) {
@@ -473,7 +466,6 @@ svg {
   height: 300px;
   padding: 35px 5px;
   
-
 }
 
 .card-container {
@@ -488,8 +480,6 @@ svg {
 .about-list li {
 font-size: 15px;
 }}
-
-
 
 
 /*MEDIA QUERIES DESKTOP --------------------------*/
@@ -512,8 +502,6 @@ font-size: 15px;
   .scene {
     width: 310px;
     height: 310px;
-  
-
   
   }
 
