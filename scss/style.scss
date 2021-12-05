@@ -70,6 +70,7 @@ header {
 nav {
      
     background-color: $color-one;
+    padding: 10px;
 
     .nav-link {
     color:$color-six;
@@ -159,6 +160,10 @@ path {
   "six";
 }
 
+.project-title {
+  font-size: 20px;
+  padding-bottom:10px;
+}
 
  .view-more {
  
@@ -196,7 +201,6 @@ path {
 
  .view-code, .view-project {
 
- 
   background-color: rgb(85, 85, 85);
   color: white;
   font-size: 8px;
@@ -228,13 +232,9 @@ path {
   padding-bottom: 1px;
 }
 
-/////Portfolio cards source: https://codepen.io/mondal10/pen/WNNEvjV
+/////Source of Portfolio base styles: https://codepen.io/mondal10/pen/WNNEvjV
 
 .scene {
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-basis: 1fr;
-  // flex-direction: column;
   align-items: center;
   margin: 0 auto;
   width: 250px;
@@ -242,11 +242,6 @@ path {
   padding-bottom: 2rem;
   padding-top: 2rem;
   perspective: 1000px; 
-}
-
-.project-title {
-  font-size: 20px;
-  padding-bottom:10px;
 }
 
 .card {
@@ -311,50 +306,38 @@ path {
   grid-area: six;
 }
 
-
+#front-one,#front-two,#front-three,#front-four, #front-five, #front-six {
+  background-size: cover;   
+  background-repeat: no-repeat;
+}  
 
 #front-one {
   
    background-image: url("../images/online-registration-form.png");
-   background-size: cover;   
-   background-repeat: no-repeat;
+
 }
 
 #front-two {
   background-image: url("../images/an-interactive-photo-gallery.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
 #front-three {
-
-  background-image: url("../images/web-app-dashboard.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-image: url("../images/web-app-dashboard.png");
 }
 
 
 #front-four {
-
-  background-image: url("../images/api-employee-directory.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-image: url("../images/api-employee-directory.png");
 }
 
 #front-five {
-
   background-image: url("../images/game-show-app.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
 #front-six {
-
   background-image: url("../images/profile-project.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /*PARTICLE --------------------------*/
@@ -488,7 +471,7 @@ svg {
 .scene {
   width: 300px;
   height: 300px;
-  padding-right: 5px 2.5px;
+  padding: 35px 5px;
   
 
 }
@@ -529,7 +512,7 @@ font-size: 15px;
   .scene {
     width: 350px;
     height: 350px;
-    padding: 5px;
+
   
   }
 

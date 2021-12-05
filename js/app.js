@@ -1,17 +1,9 @@
-source: https://codepen.io/mondal10/pen/WNNEvjV
-
-// var cards = document.querySelectorAll('.card');
-
-// cards.forEach((card)=>{
-//   card.addEventListener( 'click', function() {
-//     card.classList.toggle('is-flipped');
-//   });
-// });
+// Event listener inspired by: https://codepen.io/mondal10/pen/WNNEvjV
 
 
-var cards = document.querySelectorAll('.card');
-var viewMore = document.querySelectorAll('.view-more');
-var cardFace = document.querySelectorAll('.card__face');
+let cards = document.querySelectorAll('.card');
+let viewMore = document.querySelectorAll('.view-more');
+let cardFace = document.querySelectorAll('.card__face');
 
 
 
@@ -37,20 +29,6 @@ cards.forEach((card) => {
 
 }
 );
-
-
-// cards.forEach((card) => {
-//   const viewMore = card.querySelector('.view-more');
-//   const viewProject = card.querySelector('.view-project');
-
-//   viewMore.addEventListener('click', e => {
-//     card.classList.toggle('is-flipped');
-//   });
-//   viewProject.addEventListener('click', e => {
-//     console.log("view project");
-//   });
-// });
-
 
 
 
