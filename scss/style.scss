@@ -510,14 +510,18 @@ font-size: 15px;
   }
 
   .scene {
-    width: 350px;
-    height: 350px;
+    width: 310px;
+    height: 310px;
+  
 
   
   }
 
   .view-code, .view-project {
-    padding: 19px 22px;
+    padding: 18px 22px;
   }
 
+  .view-code:hover, .view-project:hover {
+    padding: 21px 23px;
+  }
 }
