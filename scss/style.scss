@@ -42,7 +42,7 @@ h2 {
 #contact-title, #about-title, #skills-title, #portfolio-title{
 
 color: black;
-padding-top: 15px;
+padding-top: 50px;
 padding-bottom: 20px;
 }
 
@@ -240,7 +240,7 @@ path {
   width: 250px;
   height: 250px;
   padding-bottom: 2rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   perspective: 1000px; 
 }
 
@@ -317,11 +317,13 @@ path {
   
    background-image: url("../images/online-registration-form.png");
    background-size: cover;   
+   background-repeat: no-repeat;
 }
 
 #front-two {
   background-image: url("../images/an-interactive-photo-gallery.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -329,6 +331,7 @@ path {
 
   background-image: url("../images/web-app-dashboard.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -336,12 +339,14 @@ path {
 
   background-image: url("../images/api-employee-directory.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #front-five {
 
   background-image: url("../images/game-show-app.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -349,6 +354,7 @@ path {
 
   background-image: url("../images/profile-project.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*PARTICLE --------------------------*/
@@ -394,7 +400,7 @@ z-index: -1;
 
 footer {
   width: 100%;
-  min-height: 30px;
+  min-height: 35px;
   padding-top: 20px;
   text-align: center;
   background: $color-one;
@@ -432,10 +438,17 @@ a.social {
 
 a.linkedin {
   background-image: url(../images/svg/linkedin.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+ 
 }
 
 a.github {
   background-image: url(../images/svg/github.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
 }
 
 a.social:hover {
@@ -475,6 +488,8 @@ svg {
 .scene {
   width: 300px;
   height: 300px;
+  padding-right: 5px 2.5px;
+  
 
 }
 
@@ -498,9 +513,28 @@ font-size: 15px;
 
 @media (min-width: 1024px) {
 
+  .profile-img {
+    width: 15%;
+    margin-top: 30px;   
+}
+
+  .card-container {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "one two three"
+    "four five six";
+  }
+
+  .scene {
+    width: 350px;
+    height: 350px;
+    padding: 5px;
   
+  }
 
-
-
+  .view-code, .view-project {
+    padding: 19px 22px;
+  }
 
 }
