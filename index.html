@@ -177,8 +177,8 @@
                 <li>Used SVG graphics and Javascript</li>
               </ul>
               <div class="buttons-back">
-                <a href="https://github.com/ebfaler/unit-7-project" target="_blank" class="view-code">View Code</a>
-                <a href="https://ebfaler.github.io/unit-7-project/" target="_blank" class="view-project">View Live Project</a>
+                <a href="https://github.com/ebfaler/unit-7-project" target="_blank" class="view-code" id="view-code">View Code</a>
+                <a href="https://ebfaler.github.io/unit-7-project/" target="_blank" class="view-project" id="view-project">View Live Project</a>
               </div>
             </div>
           </div>
@@ -276,10 +276,20 @@
 
     <section id="contact-section">
       <h2 id="contact-title">Get in Touch</h2>
-      <p>Please email me at <strong><a class="email"
-            href="mailto:hello@efuahfaler.com?subject=Hi%20there">hello@efuahfaler.com</a></strong></p>
+      <p>Please use the form below or email me at <strong><a class="email"
+            href="mailto:hello@efuahfaler.com?subject=Hi%20there">hello@efuahfaler.com</a></strong> </p>
       <p> I look forward to hearing from you!</p>
 
+<!-- added bootstrap form -->
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Your email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Your message for Efuah Faler</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </section>
 
   </main>

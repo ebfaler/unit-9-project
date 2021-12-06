@@ -19,22 +19,26 @@ cards.forEach((card) => {
 }
 );
 
-// cards.forEach((card) => {
-//   card.addEventListener('click', e => {
-//     if (e.target.classList == "view-more") {
-//       console.log("card flipped");
 
-//       card.classList.add('is-flipped');
-//       }
-//   });
 
-//   card.addEventListener('click', e => {
-//     if (e.target.classList.contains("card__face")) {
-//       console.log("card flipped back ");
-//       card.classList.remove('is-flipped');
-//     }
-//   })
+// event listener for form submit button
 
-// }
-// );
+const submit = document.querySelector('.btn-primary');
+const email = document.getElementById('exampleFormControlInput1');
+const message = document.getElementById('exampleFormControlTextarea1');
 
+
+submit.addEventListener('click', () => {
+// ensure email and message fields are filled out
+if (email.value === "" && message.value === "") {
+  alert("Please fill out email and message fields before sending");
+} else if (email.value === "") {
+  alert("Please fill out email field before sending");
+} else if (message.value === "") {
+  alert("Please fill out message field before sending");
+} else {
+  alert("Message successfully sent!");
+}
+
+
+})
