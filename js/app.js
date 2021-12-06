@@ -7,47 +7,34 @@ let viewMore = document.querySelectorAll('.view-more');
 let cardFace = document.querySelectorAll('.card__face');
 
 cards.forEach((card) => {
-  card.addEventListener('click', e => {
-    if (e.target.classList == "view-more") {
-      console.log("card flipped");
-
-      card.classList.add('is-flipped');
-      }
-  });
 
   card.addEventListener('click', e => {
-    if (e.target.classList.contains("card__face")) {
-      console.log("card flipped back ");
+    if (card.classList.contains('is-flipped') && e.target.tagName.toLowerCase() !== 'a') {
       card.classList.remove('is-flipped');
+    } else if (e.target.classList == "view-more") {
+      card.classList.add('is-flipped');
     }
-  })
+  });
 
 }
 );
-
 
 // cards.forEach((card) => {
 //   card.addEventListener('click', e => {
 //     if (e.target.classList == "view-more") {
 //       console.log("card flipped");
-//       if (card.classList.contains('is-flipped')) {
-//         card.classList.remove('is-flipped');
-//       } else {
-//         card.classList.add('is-flipped');
-//       }
 
-//     }
+//       card.classList.add('is-flipped');
+//       }
 //   });
 
 //   card.addEventListener('click', e => {
 //     if (e.target.classList.contains("card__face")) {
-//       console.log("card clicked");
+//       console.log("card flipped back ");
 //       card.classList.remove('is-flipped');
 //     }
 //   })
 
 // }
 // );
-
-
 
