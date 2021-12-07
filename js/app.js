@@ -1,6 +1,4 @@
 // Event listener to flip cards. Click view more button to flip to inside card, click anywhere on the card to flip back
-//Inspired by: https://codepen.io/mondal10/pen/WNNEvjV
-
 
 let cards = document.querySelectorAll('.card');
 let viewMore = document.querySelectorAll('.view-more');
@@ -20,8 +18,7 @@ cards.forEach((card) => {
 );
 
 
-
-// event listener for form submit button
+// Event listener for form submit button
 
 const submit = document.querySelector('.btn-primary');
 const email = document.getElementById('exampleFormControlInput1');
