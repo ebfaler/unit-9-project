@@ -1,6 +1,4 @@
 // Event listener to flip cards. Click view more button to flip to inside card, click anywhere on the card to flip back
-//Inspired by: https://codepen.io/mondal10/pen/WNNEvjV
-
 
 let cards = document.querySelectorAll('.card');
 let viewMore = document.querySelectorAll('.view-more');
