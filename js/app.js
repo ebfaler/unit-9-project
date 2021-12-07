@@ -18,8 +18,7 @@ cards.forEach((card) => {
 );
 
 
-
-// event listener for form submit button
+// Event listener for form submit button
 
 const submit = document.querySelector('.btn-primary');
 const email = document.getElementById('exampleFormControlInput1');
