@@ -289,7 +289,7 @@
       <p> I look forward to hearing from you!</p>
 
       <!-- added bootstrap form -->
-      <div class="form-div">
+      <!-- <div class="form-div">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Your email address</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -299,7 +299,27 @@
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
+      </div> -->
+
+      <form class="needs-validation form-div" novalidate>
+        <div class="mb-3">
+          <label for="validationCustom01" class="form-label">Your email address</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="invalid-feedback">
+            Please enter an email address!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="validationCustom02" class="form-label">Your message for Efuah Faler</label>
+          <textarea class="form-control" id="validationCustom02" type="text" rows="3" value="" required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message!
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+
+
     </section>
   </main>
 
