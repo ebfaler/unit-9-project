@@ -69,6 +69,7 @@ nav .nav-link:hover {
   border: 5px solid #e6eee1;
   display: block;
   width: 30%;
+  filter: grayscale(100%);
 }
 
 /*ABOUT and SVG's --------------------------*/
@@ -85,7 +86,7 @@ main {
   width: 80%;
   text-align: center;
   margin: 0 auto;
-  padding: 1rem;
+  padding: .5rem;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -118,7 +119,7 @@ path {
 .card-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "one""two""three""four""five""six";
+  grid-template-areas: "one" "two" "three" "four" "five" "six";
 }
 
 .project-title {
@@ -913,6 +914,7 @@ a.social:hover {
   .profile-img {
     width: 25%;
     margin-top: 30px;
+
   }
 
   .block-div {
@@ -937,7 +939,7 @@ a.social:hover {
   .card-container {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "one two""three four""five six";
+    grid-template-areas: "one two" "three four" "five six";
   }
 
   .about-list li {
@@ -960,7 +962,7 @@ a.social:hover {
   .card-container {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "one two three""four five six";
+    grid-template-areas: "one two three" "four five six";
   }
 
   .scene {
