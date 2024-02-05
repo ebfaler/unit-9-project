@@ -61,3 +61,13 @@ const message = document.getElementById('exampleFormControlTextarea1');
     })
 })()
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the current year
+  var currentYear = new Date().getFullYear();
+
+  // Update the content of the element with id "currentYear"
+  var yearElement = document.getElementById("currentYear");
+  if (yearElement) {
+    yearElement.textContent = currentYear;
+  }
+});

@@ -22,6 +22,7 @@ h2 {
   display: inline-flex;
 }
 
+
 #contact-title,
 #about-title,
 #skills-title,
@@ -79,6 +80,7 @@ main {
   position: relative;
   text-align: center;
 }
+
 
 .about-text {
   background-color: #cfc4daa8;
