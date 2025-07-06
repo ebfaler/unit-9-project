@@ -12,47 +12,50 @@ $font-stack-primary: 'Roboto', sans-serif;
 /*BASE --------------------------*/
 
 * {
-    font-size: 15px; 
-    font-family: $font-stack-primary;
+  font-size: 15px;
+  font-family: $font-stack-primary;
 }
 
 
 h1 {
-  
-    font-size: 1rem;
-    text-align: center;
-    color: $color-one;
-    text-transform: uppercase;
-    display: inline-flex;
+
+  font-size: 1rem;
+  text-align: center;
+  color: $color-one;
+  text-transform: uppercase;
+  display: inline-flex;
 
 }
 
 h2 {
-    font-size: .3rem;
-    text-align: center;
-    color:$color-two;
-    text-transform: uppercase;
-    display: inline-flex;
+  font-size: .3rem;
+  text-align: center;
+  color: $color-two;
+  text-transform: uppercase;
+  display: inline-flex;
 
 }
 
-#contact-title, #about-title, #skills-title, #portfolio-title{
+#contact-title,
+#about-title,
+#skills-title,
+#portfolio-title {
 
-color: black;
-padding-top: 50px;
-padding-bottom: 20px;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 
 /*HEADER AND NAV --------------------------*/
 
 header {
- 
-    background: url("../images/hong-kong-g4e52ea28d_1920.jpg");
-    padding-bottom: 2em;
-    background-size: cover;
-    z-index: 1;
-    position: relative;
+
+  background: url("../images/hong-kong-g4e52ea28d_1920.jpg");
+  padding-bottom: 2em;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
 }
 
 
@@ -65,75 +68,75 @@ header {
 
 
 nav {
-     
-    background-color: $color-one;
-    font-size: 20px;
 
-    .nav-link {
-    color:$color-six;
-    
-}  
+  background-color: $color-one;
+  font-size: 20px;
 
-.nav-link:hover {
+  .nav-link {
+    color: $color-six;
+
+  }
+
+  .nav-link:hover {
     color: white;
-}
+  }
 }
 
 .profile-img {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    border: 5px solid $color-six;
-    display: block;
-    width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 5px solid $color-six;
+  display: block;
+  width: 30%;
 }
 
 /*ABOUT and SVG's --------------------------*/
 
 main {
-  
-    background-color: white ;
-    z-index: 1;
-    position: relative;
-    text-align: center;
+
+  background-color: white;
+  z-index: 1;
+  position: relative;
+  text-align: center;
 }
 
 .about-text {
-    background-color: $color-seven;
-    color: black;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 500;
+  background-color: $color-seven;
+  color: black;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .svg-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+
 }
 
 svg {
-    height: 100px;
-    width: 100px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    color: $color-two;
+  height: 100px;
+  width: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  color: $color-two;
 }
 
 path {
   fill: $color-one;
-}​
+}
 
-
+​
 /*MY PORTFOLIO --------------------------*/
 
 #portfolio-title {
@@ -144,22 +147,22 @@ path {
 .card-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-  "one"
-  "two"
-  "three"
-  "four"
-  "five"
-  "six";
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
 }
 
 .project-title {
   font-size: 20px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
- .view-more {
- 
+.view-more {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -179,20 +182,23 @@ path {
 }
 
 
-.buttons-back{
+.buttons-back {
 
   position: absolute;
-  bottom:8%;
+  bottom: 8%;
   left: 10%;
   right: 10%;
-  a:link, a:visited {
+
+  a:link,
+  a:visited {
     text-decoration: none;
     color: white;
-  } 
+  }
 }
 
 
- .view-code, .view-project {
+.view-code,
+.view-project {
 
   background-color: rgb(85, 85, 85);
   color: white;
@@ -205,7 +211,8 @@ path {
   margin-left: 5px;
 }
 
-.view-code:hover, .view-project:hover {
+.view-code:hover,
+.view-project:hover {
   padding: 12px 16px;
 }
 
@@ -234,7 +241,7 @@ path {
   height: 250px;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  perspective: 1000px; 
+  perspective: 1000px;
 }
 
 .card {
@@ -261,7 +268,7 @@ path {
   font-weight: bold;
   font-size: 1em;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;  
+  -webkit-backface-visibility: hidden;
 }
 
 .card__face--back {
@@ -269,7 +276,7 @@ path {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   background-size: cover;
-  
+
 }
 
 .card.is-flipped {
@@ -286,27 +293,36 @@ path {
 .card2 {
   grid-area: two;
 }
+
 .card3 {
   grid-area: three;
 }
+
 .card4 {
   grid-area: four;
 }
+
 .card5 {
   grid-area: five;
 }
+
 .card6 {
   grid-area: six;
 }
 
-#front-one,#front-two,#front-three,#front-four, #front-five, #front-six {
-  background-size: cover;   
+#front-one,
+#front-two,
+#front-three,
+#front-four,
+#front-five,
+#front-six {
+  background-size: cover;
   background-repeat: no-repeat;
-}  
+}
 
 #front-one {
-  
-   background-image: url("../images/online-registration-form.png");
+
+  background-image: url("../images/online-registration-form.png");
 
 }
 
@@ -316,12 +332,12 @@ path {
 
 
 #front-three {
- background-image: url("../images/web-app-dashboard.png");
+  background-image: url("../images/web-app-dashboard.png");
 }
 
 
 #front-four {
- background-image: url("../images/api-employee-directory.png");
+  background-image: url("../images/api-employee-directory.png");
 }
 
 #front-five {
@@ -338,31 +354,31 @@ path {
 // Particle SCSS source: https://codepen.io/tutsplus/pen/MrjYJK
 
 .particle {
-position: absolute;
-border-radius: 50%;
-z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 
 @for $i from 1 through 30 {
-@keyframes particle-animation-#{$i} {
-  100% {
-    transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-    -webkit-transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+  @keyframes particle-animation-#{$i} {
+    100% {
+      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+      -webkit-transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+    }
   }
-}
 
-.particle:nth-child(#{$i}){
-  animation: particle-animation-#{$i} 60s infinite;
-  $size: random(5) + 5 + px;
-  opacity: random(100)/100;
-  height: $size;
-  width: $size;
-  animation-delay: -$i * .1s;
-  transform: translate3d((random(100) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-  -webkit-transform: translate3d((random(100) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-  background: white;
-}
+  .particle:nth-child(#{$i}) {
+    animation: particle-animation-#{$i} 60s infinite;
+    $size: random(5) + 5 + px;
+    opacity: random(100)/100;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * .1s;
+    transform: translate3d((random(100) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+    -webkit-transform: translate3d((random(100) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+    background: white;
+  }
 }
 
 /*CONTACT --------------------------*/
@@ -415,7 +431,7 @@ a.linkedin {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
- 
+
 }
 
 a.github {
@@ -430,8 +446,8 @@ a.social:hover {
 }
 
 .email {
- color: black;
- text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 
@@ -444,48 +460,49 @@ a.social:hover {
 
   .profile-img {
     width: 25%;
-    margin-top: 30px;   
+    margin-top: 30px;
+  }
+
+  .block-div {
+    background-color: white;
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+  }
+
+
+  svg {
+    height: 80px;
+    width: 80px;
+    color: $color-two;
+  }
+
+  .scene {
+    width: 300px;
+    height: 300px;
+    padding: 35px 5px;
+
+  }
+
+  .card-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+
+  .about-list li {
+    font-size: 15px;
+  }
 }
-
-.block-div {
-  background-color: white;
-  display: block;
-  width: 50%;
-  margin: 15px auto;
-}
-
-
-svg {
-  height: 80px;
-  width: 80px;
-  color: $color-two;
-}
-
-.scene {
-  width: 300px;
-  height: 300px;
-  padding: 35px 5px;
-  
-}
-
-.card-container {
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "one two"
-  "three four"
-  "five six";
-}
-
-.about-list li {
-font-size: 15px;
-}}
 
 
 .form-div {
   width: 60%;
   margin: 0 auto;
-  }
+}
 
 /*MEDIA QUERIES DESKTOP --------------------------*/
 
@@ -493,28 +510,30 @@ font-size: 15px;
 
   .profile-img {
     width: 15%;
-    margin-top: 30px;   
-}
+    margin-top: 30px;
+  }
 
   .card-container {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "one two three"
-    "four five six";
+    grid-template-areas:
+      "one two three"
+      "four five six";
   }
 
   .scene {
     width: 310px;
     height: 310px;
-  
+
   }
 
-  .view-code, .view-project {
+  .view-code,
+  .view-project {
     padding: 18px 22px;
   }
 
-  .view-code:hover, .view-project:hover {
+  .view-code:hover,
+  .view-project:hover {
     padding: 21px 23px;
   }
 }
